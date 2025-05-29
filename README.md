@@ -14,6 +14,8 @@ This is a Pytorch implementation of paper titled "Demystifying Catastrophic Forg
 
 Thanks for your attention to our paper. We are cleaning our code base for later release. Please give us a star and stay tuned.
 
+[Here](https://drive.google.com/file/d/183kJ-wYJPAs-2yQpj-kVL4b76CA2a1CT/view?usp=sharing) is a version of code for those in need. This version of our code has some unrelated experimental components removed, but it has not been tested. Feel free to open an issue if you encounter any problems.
+
 ## Citation
 
 If you find our [code](https://github.com/fanrena/NSGP-RePRE) or [paper](https://arxiv.org/abs/2502.05540) useful, please give us a citation.
@@ -22,7 +24,7 @@ If you find our [code](https://github.com/fanrena/NSGP-RePRE) or [paper](https:/
 @article{wu2025demystifying,
   title={Demystifying Catastrophic Forgetting in Two-Stage Incremental Object Detector},
   author={Wu, Qirui and Zhang, Shizhou and Cheng, De and Xing, Yinghui and Xu, Di and Wang, Peng and Zhang, Yanning},
-  journal={arXiv preprint arXiv:2502.05540},
+  booktitle={Forty-first International Conference on Machine Learning},
   year={2025}
 }
 
