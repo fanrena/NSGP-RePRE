@@ -6,7 +6,7 @@ This is a Pytorch implementation of paper titled "Demystifying Catastrophic Forg
 
 **Authors:** Qirui Wu, Shizhou Zhang, De Cheng, Yinghui Xing, Di Xu, Peng Wang, Yanning Zhang
 
-**Email:** [Qirui Wu](wuqirui@mail.nwpu.edu.cn)
+**Email:** wuqirui@mail.nwpu.edu.cn
 
 **Arxiv:** [https://arxiv.org/abs/2502.05540](https://arxiv.org/abs/2502.05540)
 
