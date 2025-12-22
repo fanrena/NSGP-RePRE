@@ -5,9 +5,9 @@ This document provides a brief guide to configuring the NSGP-RePRE method. The p
 ## Quick Customization Guide
 
 You can easily customize your configuration in three steps:
-1. **Change the dataset configuration** (modify Line 12 in the `_base_` list).
-2. **Change the task ID** (modify Line 16 for `task_id`), ensuring it aligns with your dataset configuration.
-3. **Change the task split** (modify Line 17 for `train_task_split`), ensuring it aligns with your dataset configuration.
+1. **Change the dataset configuration** (modify Line 22 in the `_base_` list).
+2. **Change the task ID** (modify Line 28 for `task_id`), ensuring it aligns with your dataset configuration.
+3. **Change the task split** (modify Line 29 for `train_task_split`), ensuring it aligns with your dataset configuration.
 
 **Note:** You must also update the corresponding dataset configuration file with the same `task_id` and `train_task_split` values.
 
