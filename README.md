@@ -11,7 +11,8 @@ This repository contains the official PyTorch implementation of the paper **"Dem
 
 **Authors:** Qirui Wu, Shizhou Zhang, De Cheng, Yinghui Xing, Di Xu, Peng Wang, Yanning Zhang  
 **Email:** wuqirui@mail.nwpu.edu.cn  
-**Paper:** [arXiv:2502.05540](https://arxiv.org/abs/2502.05540)
+**Paper:** [arXiv:2502.05540](https://arxiv.org/abs/2502.05540)  
+**Checkpoints:** [HuggingFace](https://huggingface.co/fanrena/NSGP-RePRE)
 
 ## Getting Started
 
