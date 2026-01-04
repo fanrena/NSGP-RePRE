@@ -135,7 +135,8 @@ class StandardRoIReplayHead(StandardRoIHead):
             if self.with_shared_head:
                 bbox_feats = self.shared_head(bbox_feats)
                 
-            bbox_feats = self.bbox_head.get_mid_features(bbox_feats)
+            # bbox_feats = self.bbox_head.get_mid_features(bbox_feats)
+            # This replays prototypes on classification branch only (not including shared layers), which is less effective compared with default setting.
             
             # print(torch.sort(cls))
             
@@ -269,9 +270,6 @@ class StandardPrototypeReplayHead(StandardRoIReplayHead):
                 - `bbox_feats` (Tensor): Extract bbox RoI features.
                 - `loss_bbox` (dict): A dictionary of bbox loss components.
         """
-        # bbox_feats = torch.rot90(bbox_feats, torch.randint(0, 4, (1,)).item(), dims=(-2,-1))
-        if self.with_shared_head:
-            bbox_feats = self.shared_head(bbox_feats)
         cls_score, bbox_pred = self.bbox_head(bbox_feats)
         
         # teacher model
@@ -480,10 +478,6 @@ class StandardMultiPrototypeReplayHead(StandardRoIReplayHead):
                 - `bbox_feats` (Tensor): Extract bbox RoI features.
                 - `loss_bbox` (dict): A dictionary of bbox loss components.
         """
-
-        bbox_feats = bbox_feats
-        if self.with_shared_head:
-            bbox_feats = self.shared_head(bbox_feats)
         cls_score, bbox_pred = self.bbox_head(bbox_feats)
 
         bbox_results = dict(
