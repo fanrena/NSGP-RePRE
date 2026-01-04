@@ -136,7 +136,7 @@ class StandardRoIReplayHead(StandardRoIHead):
                 bbox_feats = self.shared_head(bbox_feats)
                 
             # bbox_feats = self.bbox_head.get_mid_features(bbox_feats)
-            # This replays prototypes on classification branch only (not including shared layers), which is less effective compared with default setting.
+            # This replays prototypes on classification head only (not including shared layers), which is less effective compared with default setting.
             
             # print(torch.sort(cls))
             
