@@ -1,5 +1,4 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .loops import TeacherStudentValLoop
 from .teacherrunner import TeacherRunner
 from .nsrunner_backbon import BNullSpaceRunner
 # from .nsrunner_head import HeadNullSpaceRunner
